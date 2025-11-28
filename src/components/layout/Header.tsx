@@ -11,7 +11,7 @@ const NAV_LINKS = [
 export default function Header() {
 	return (
 		<header className='sticky top-0 z-50 border-b border-slate-200/60 bg-white/70 backdrop-blur-lg dark:border-slate-800/70 dark:bg-slate-950/70'>
-			<div className='mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4'>
+			<div className='mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8'>
 				<a
 					href='#hero'
 					className='flex items-center gap-3'
@@ -41,6 +41,20 @@ export default function Header() {
 				</nav>
 				<ThemeToggle />
 			</div>
+			<nav
+				className='mx-auto mt-1 flex w-full max-w-6xl gap-3 overflow-x-auto px-4 pb-3 text-sm font-semibold text-slate-600 md:hidden sm:px-6 lg:px-8'
+				aria-label='Primary'
+			>
+				{NAV_LINKS.map((link) => (
+					<a
+						key={link.href}
+						href={link.href}
+						className='shrink-0 rounded-full border border-slate-200/80 bg-white/80 px-4 py-2 text-slate-700 shadow-sm transition hover:border-emerald-300 hover:text-emerald-500 dark:border-slate-800/80 dark:bg-slate-900/60 dark:text-slate-200'
+					>
+						{link.label}
+					</a>
+				))}
+			</nav>
 		</header>
 	);
 }

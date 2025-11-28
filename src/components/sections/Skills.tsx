@@ -66,7 +66,7 @@ export default function Skills() {
 						{error}
 					</p>
 				) : null}
-				<div className='grid gap-8 md:grid-cols-3'>
+				<div className='grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
 					{SOURCES.map((source) => (
 						<div
 							key={source.id}

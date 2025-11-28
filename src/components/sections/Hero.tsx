@@ -24,7 +24,7 @@ export default function Hero() {
 				/>
 				<div className='absolute -right-10 top-10 h-72 w-72 rounded-full bg-emerald-200 blur-[120px] opacity-50 dark:bg-emerald-500/30' />
 			</div>
-			<div className='relative z-10 grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center'>
+			<div className='relative z-10 flex flex-col gap-10 text-center md:grid md:grid-cols-[1.1fr_0.9fr] md:items-center md:text-left'>
 				<div className='space-y-6'>
 					<p className='text-sm uppercase tracking-[0.6em] text-emerald-600 dark:text-emerald-300'>
 						Hello, I am
@@ -39,15 +39,15 @@ export default function Hero() {
 						Full-stack engineer crafting resilient platforms across web, mobile, and machine learning. I
 						obsess over typography, performance budgets, and human-centered developer experience.
 					</p>
-					<div className='flex flex-wrap gap-4'>
+					<div className='flex flex-wrap justify-center gap-4 md:justify-start'>
 						{CTA_LINKS.map((cta) => (
 							<motion.a
 								key={cta.href}
 								href={cta.href}
 								className={
 									cta.primary
-										? "inline-flex items-center justify-center rounded-full bg-linear-to-r from-emerald-500 via-emerald-400 to-sky-400 px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-0.5 hover:brightness-105"
-										: "inline-flex items-center justify-center rounded-full border border-emerald-100/70 bg-white/80 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-500 dark:border-emerald-500/30 dark:bg-slate-900/60 dark:text-emerald-200"
+										? "inline-flex w-full items-center justify-center rounded-full bg-linear-to-r from-emerald-500 via-emerald-400 to-sky-400 px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-0.5 hover:brightness-105 sm:w-auto"
+									: "inline-flex w-full items-center justify-center rounded-full border border-emerald-100/70 bg-white/80 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-500 dark:border-emerald-500/30 dark:bg-slate-900/60 dark:text-emerald-200 sm:w-auto"
 								}
 								whileHover={{ y: 2, scale: 1.01 }}
 								whileTap={{ scale: 0.99 }}
@@ -56,7 +56,7 @@ export default function Hero() {
 							</motion.a>
 						))}
 					</div>
-					<ul className='flex flex-wrap gap-4 text-sm text-slate-500 dark:text-slate-400'>
+					<ul className='flex flex-wrap justify-center gap-4 text-sm text-slate-500 dark:text-slate-400 md:justify-start'>
 						{currentRolodex.map((item) => (
 							<li
 								key={item}

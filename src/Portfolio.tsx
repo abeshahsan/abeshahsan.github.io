@@ -40,7 +40,7 @@ export default function Portfolio() {
 				Skip to content
 			</a>
 			<Header />
-			<main className='mx-auto flex max-w-6xl flex-col gap-16 px-6 py-16'>
+			<main className='mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 py-12 sm:gap-16 sm:px-6 sm:py-16 lg:px-8'>
 				<Hero />
 				<About />
 				<Skills />

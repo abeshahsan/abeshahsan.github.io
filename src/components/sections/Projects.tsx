@@ -70,7 +70,10 @@ export default function Projects() {
 					title='Selected work'
 					copy='From ML pipelines to design systems, here are a few favorite builds.'
 				/>
-				<div className='flex flex-wrap gap-3'>
+				<div
+					className='-mx-1 flex gap-3 overflow-x-auto pb-2 text-sm font-semibold md:flex-wrap md:overflow-visible md:pb-0'
+					aria-label='Project filters'
+				>
 					{["all", ...PROJECT_SOURCES.map((s) => s.id)].map((value) => {
 						const label =
 							value === "all" ? "All" : PROJECT_SOURCES.find((s) => s.id === value)?.label ?? value;
@@ -79,10 +82,10 @@ export default function Projects() {
 								key={value}
 								type='button'
 								onClick={() => setFilter(value)}
-								className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
+								className={`shrink-0 rounded-full px-4 py-2 whitespace-nowrap transition ${
 									filter === value
 										? "bg-emerald-500 text-white"
-										: "border border-slate-200 text-slate-600 hover:border-emerald-400 hover:text-emerald-500 dark:border-slate-700 dark:text-slate-200"
+									: "border border-slate-200 bg-white/80 text-slate-600 hover:border-emerald-400 hover:text-emerald-500 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200"
 								}`}
 							>
 								{label}

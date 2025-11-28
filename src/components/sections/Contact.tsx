@@ -25,11 +25,11 @@ export default function Contact() {
 						title="Let's collaborate"
 						copy='Fueled by teams shipping user-focused ML, design systems, and platform tooling.'
 					/>
-					<ul className='space-y-4 text-sm text-slate-600 dark:text-slate-300'>
+					<ul className='grid gap-3 text-sm text-slate-600 dark:text-slate-300 sm:grid-cols-2'>
 						{CONTACT_INFO.map((item) => (
 							<li
 								key={item.label}
-								className='flex items-center gap-3 rounded-2xl border border-white/70 bg-white/70 px-4 py-3 backdrop-blur dark:border-slate-800/70 dark:bg-slate-900/50'
+								className='flex flex-col gap-1 rounded-2xl border border-white/70 bg-white/70 px-4 py-3 backdrop-blur dark:border-slate-800/70 dark:bg-slate-900/50 sm:gap-2'
 							>
 								<span className='text-xs uppercase tracking-[0.4em] text-emerald-500 dark:text-emerald-300'>
 									{item.label}
