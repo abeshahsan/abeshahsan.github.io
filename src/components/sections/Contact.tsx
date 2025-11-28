@@ -12,7 +12,7 @@ export default function Contact() {
 	return (
 		<motion.section
 			id='contact'
-			className='rounded-[2.25rem] border border-slate-200 bg-white/95 p-10 shadow-[0_50px_140px_-90px] shadow-slate-900/30 dark:border-slate-800 dark:bg-slate-950/85'
+			className='rounded-[2.25rem] border border-slate-100/70 bg-linear-to-br from-white via-slate-50 to-emerald-50/35 p-10 shadow-[0_50px_140px_-90px] shadow-emerald-500/25 dark:border-slate-800/70 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900'
 			initial={{ opacity: 0, y: 32 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			viewport={{ once: true, amount: 0.3 }}
@@ -29,9 +29,11 @@ export default function Contact() {
 						{CONTACT_INFO.map((item) => (
 							<li
 								key={item.label}
-								className='flex items-center gap-2'
+								className='flex items-center gap-3 rounded-2xl border border-white/70 bg-white/70 px-4 py-3 backdrop-blur dark:border-slate-800/70 dark:bg-slate-900/50'
 							>
-								<span className='text-xs uppercase tracking-[0.4em] text-slate-400'>{item.label}</span>
+								<span className='text-xs uppercase tracking-[0.4em] text-emerald-500 dark:text-emerald-300'>
+									{item.label}
+								</span>
 								{item.href ? (
 									<a
 										href={item.href}

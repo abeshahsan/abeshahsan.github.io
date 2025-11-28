@@ -58,7 +58,7 @@ export default function Projects() {
 	return (
 		<motion.section
 			id='projects'
-			className='rounded-[2.25rem] border border-slate-200 bg-white/95 p-10 shadow-[0_40px_160px_-80px] shadow-slate-900/25 dark:border-slate-800 dark:bg-slate-950/80'
+			className='rounded-[2.25rem] border border-slate-100/70 bg-linear-to-br from-white via-slate-50 to-emerald-50/30 p-10 shadow-[0_40px_160px_-80px] shadow-emerald-500/25 dark:border-slate-800/70 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900'
 			initial={{ opacity: 0, y: 32 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			viewport={{ once: true, amount: 0.2 }}

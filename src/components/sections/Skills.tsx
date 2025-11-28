@@ -48,7 +48,7 @@ export default function Skills() {
 	return (
 		<motion.section
 			id='skills'
-			className='rounded-[2.25rem] border border-slate-200 bg-white/90 p-10 shadow-[0_40px_120px_-80px] shadow-emerald-500/20 dark:border-slate-800 dark:bg-slate-950/80'
+			className='rounded-[2.25rem] border border-slate-100/70 bg-linear-to-br from-white via-emerald-50/40 to-white p-10 shadow-[0_40px_120px_-80px] shadow-emerald-500/20 dark:border-slate-800/70 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900'
 			initial={{ opacity: 0, y: 32 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			viewport={{ once: true, amount: 0.3 }}
@@ -70,9 +70,9 @@ export default function Skills() {
 					{SOURCES.map((source) => (
 						<div
 							key={source.id}
-							className='space-y-4 rounded-2xl border border-slate-100/80 p-6 dark:border-slate-800/80'
+							className='relative space-y-4 rounded-2xl border border-slate-100/80 bg-linear-to-br from-white/90 via-emerald-50/30 to-white/90 p-6 shadow-[0_30px_80px_-60px] shadow-emerald-500/15 dark:border-slate-800 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-900/80'
 						>
-							<h3 className='text-sm font-semibold uppercase tracking-[0.4em] text-slate-400'>
+							<h3 className='text-sm font-semibold uppercase tracking-[0.4em] text-emerald-500 dark:text-emerald-300'>
 								{source.label}
 							</h3>
 							<ul className='flex flex-wrap gap-3'>

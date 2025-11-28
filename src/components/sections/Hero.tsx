@@ -26,10 +26,12 @@ export default function Hero() {
 			</div>
 			<div className='relative z-10 grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center'>
 				<div className='space-y-6'>
-					<p className='text-sm uppercase tracking-[0.6em] text-slate-500'>Hello, I am</p>
+					<p className='text-sm uppercase tracking-[0.6em] text-emerald-600 dark:text-emerald-300'>
+						Hello, I am
+					</p>
 					<h1 className='text-4xl font-semibold leading-tight text-slate-900 dark:text-white md:text-5xl'>
 						Abesh Ahsan
-						<span className='ml-3 inline-flex items-center rounded-full bg-white/70 px-3 py-1 text-base font-medium text-slate-600 shadow-sm dark:bg-slate-800/70 dark:text-slate-200'>
+						<span className='ml-3 inline-flex items-center rounded-full bg-linear-to-r from-white via-emerald-50 to-white px-3 py-1 text-base font-medium text-emerald-700 shadow-sm dark:from-slate-800/80 dark:via-emerald-500/20 dark:to-slate-800/80 dark:text-emerald-200'>
 							Building calm, scalable products
 						</span>
 					</h1>
@@ -44,8 +46,8 @@ export default function Hero() {
 								href={cta.href}
 								className={
 									cta.primary
-										? "inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-0.5 hover:bg-emerald-400"
-										: "inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-emerald-400 hover:text-emerald-500 dark:border-slate-700 dark:text-slate-200"
+										? "inline-flex items-center justify-center rounded-full bg-linear-to-r from-emerald-500 via-emerald-400 to-sky-400 px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-0.5 hover:brightness-105"
+										: "inline-flex items-center justify-center rounded-full border border-emerald-100/70 bg-white/80 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:text-emerald-500 dark:border-emerald-500/30 dark:bg-slate-900/60 dark:text-emerald-200"
 								}
 								whileHover={{ y: 2, scale: 1.01 }}
 								whileTap={{ scale: 0.99 }}
@@ -54,13 +56,13 @@ export default function Hero() {
 							</motion.a>
 						))}
 					</div>
-					<ul className='flex flex-wrap gap-4 text-sm text-slate-500'>
+					<ul className='flex flex-wrap gap-4 text-sm text-slate-500 dark:text-slate-400'>
 						{currentRolodex.map((item) => (
 							<li
 								key={item}
 								className='flex items-center gap-2'
 							>
-								<span className='h-1.5 w-1.5 rounded-full bg-emerald-400' />
+								<span className='h-1.5 w-1.5 rounded-full bg-emerald-500 dark:bg-emerald-400' />
 								{item}
 							</li>
 						))}
