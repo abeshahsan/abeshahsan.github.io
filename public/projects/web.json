@@ -1,0 +1,20 @@
+[
+  {
+    "id": "immersive-portfolio",
+    "title": "Immersive Portfolio",
+    "description": "A motion-rich personal site with adaptive theming, glassmorphism panels, and MDX-powered blog tooling.",
+    "stack": ["React", "Vite", "Tailwind", "MDX"],
+    "github": "https://github.com/abeshahsan/immersive-portfolio",
+    "demo": "https://abesh.dev",
+    "image": null
+  },
+  {
+    "id": "studio-ops",
+    "title": "StudioOps Dashboard",
+    "description": "Full-stack analytics dashboard for creative studios featuring realtime briefs, asset approvals, and multi-tenant auth.",
+    "stack": ["Next.js", "tRPC", "PostgreSQL", "Tailwind"],
+    "github": "https://github.com/abeshahsan/studio-ops",
+    "demo": "https://studio-ops.app",
+    "image": null
+  }
+]

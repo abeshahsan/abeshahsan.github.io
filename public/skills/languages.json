@@ -1,0 +1,7 @@
+[
+  { "name": "TypeScript", "level": "Advanced", "years": 4 },
+  { "name": "JavaScript", "level": "Advanced", "years": 6 },
+  { "name": "Python", "level": "Advanced", "years": 5 },
+  { "name": "Go", "level": "Intermediate", "years": 2 },
+  { "name": "SQL", "level": "Advanced", "years": 6 }
+]

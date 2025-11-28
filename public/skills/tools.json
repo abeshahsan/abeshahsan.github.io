@@ -1,0 +1,7 @@
+[
+  { "name": "Git & GitHub", "level": "Advanced" },
+  { "name": "Docker", "level": "Intermediate" },
+  { "name": "AWS", "level": "Intermediate" },
+  { "name": "Postman", "level": "Advanced" },
+  { "name": "Figma", "level": "Intermediate" }
+]

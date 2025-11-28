@@ -1,0 +1,20 @@
+[
+  {
+    "id": "pulse-vision",
+    "title": "PulseVision",
+    "description": "Computer-vision pipeline that detects surface cracks on aircraft fuselage imagery with on-device quantization.",
+    "stack": ["Python", "TensorFlow", "OpenCV"],
+    "github": "https://github.com/abeshahsan/pulse-vision",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "forecast-hub",
+    "title": "ForecastHub",
+    "description": "Hybrid time-series models that forecast rider demand for micro-mobility fleets with automated anomaly alerts.",
+    "stack": ["Python", "Prophet", "AWS"],
+    "github": "https://github.com/abeshahsan/forecast-hub",
+    "demo": null,
+    "image": null
+  }
+]

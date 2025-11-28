@@ -1,0 +1,8 @@
+[
+  { "name": "React", "level": "Advanced", "favorite": true },
+  { "name": "Next.js", "level": "Advanced" },
+  { "name": "Node.js", "level": "Advanced" },
+  { "name": "Express", "level": "Advanced" },
+  { "name": "Tailwind CSS", "level": "Advanced" },
+  { "name": "TensorFlow", "level": "Intermediate" }
+]

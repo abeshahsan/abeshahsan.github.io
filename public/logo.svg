@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Abesh Personal Logo</title>
+  <desc id="logoDesc">Stylized logotype for Abesh with gradient text and abstract accent shapes.</desc>
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#1f2937" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7f9cf5" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0" y1="1" x2="1.1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+      <feBlend in="SourceGraphic" in2="blur" mode="screen" />
+    </filter>
+    <radialGradient id="spark" cx="0.5" cy="0.3" r="0.6">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#f8fafc" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="560" height="240" rx="28" fill="url(#bgGradient)" />
+
+  <g filter="url(#softGlow)">
+    <path d="M60 178 C130 54, 270 42, 362 110 C438 166, 494 80, 520 48 C504 116, 452 202, 352 212 C228 224, 140 218, 60 178 Z" fill="url(#accentGradient)" opacity="0.36" />
+  </g>
+
+  <path d="M128 188 C184 140, 220 84, 282 76 C332 70, 360 114, 412 108 C452 104, 476 72, 498 42 C470 148, 394 210, 288 214 C214 216, 168 206, 128 188 Z" fill="url(#accentGradient)" opacity="0.18" />
+
+  <g transform="translate(90 36)">
+    <path d="M80 160 L132 40 L176 160" fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
+    <path d="M146 108 L118 108" stroke="#f9fafb" stroke-width="8" stroke-linecap="round" opacity="0.82" />
+    <circle cx="132" cy="44" r="16" fill="url(#spark)" />
+  </g>
+
+  <text x="280" y="140" text-anchor="middle" font-size="86" font-weight="700" letter-spacing="6" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" fill="url(#textGradient)" stroke="#0f172a" stroke-width="2" paint-order="stroke">
+    Abesh
+  </text>
+
+  <g opacity="0.6">
+    <rect x="144" y="188" width="120" height="4" rx="2" fill="#38bdf8" />
+    <rect x="296" y="188" width="120" height="4" rx="2" fill="#34d399" />
+  </g>
+</svg>
