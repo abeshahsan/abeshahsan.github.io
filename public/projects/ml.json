@@ -2,7 +2,7 @@
   {
     "id": "thesis-wsss",
     "title": "Weakly Supervised Semantic Segmentation With Image Labels",
-    "description": "Pioneered a transformer-based approach to enhance object detail understanding in weakly supervised segmentation. Replaced traditional encoders like CLIP/ViT with UniCL using a Swin Transformer, enabling finer local feature extraction through windowed attention. Experimented with multiple CAM generation and refinement methods, improving affinity calculations and leveraging encoder intermediate features. The model produced highly detailed masks for most classes, achieving a mean IoU of 50%, offering clear improvements in fine-grained segmentation.",
+    "description": "Advanced research in weakly supervised semantic segmentation leveraging transformer architectures for enhanced object detail recognition. Replaced conventional CLIP/ViT encoders with UniCL's Swin Transformer to enable superior local feature extraction through hierarchical windowed attention. Developed novel CAM generation and refinement pipeline, optimizing affinity calculations and exploiting intermediate encoder features. Achieved 50% mean IoU with significantly improved fine-grained mask quality, demonstrating state-of-the-art detail preservation across diverse object classes.",
     "stack": ["Python", "PyTorch", "Swin Transformer", "UniCL", "CAM"],
     "github": "https://github.com/abeshahsan/weakly-supervised-segmentation",
     "demo": null,

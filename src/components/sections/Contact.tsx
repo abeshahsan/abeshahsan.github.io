@@ -21,13 +21,13 @@ export default function Contact() {
 			transition={{ duration: 0.55, ease: "easeOut" }}
 		>
 			<div className='grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center'>
-				<div className='space-y-6'>
-					<SectionHeader
-						label='Contact'
-						title="Let's connect"
-						copy="Open to opportunities in software development and ML. Let\'s build something great together."
-					/>
-					<ul className='grid gap-3 text-sm text-slate-600 dark:text-slate-300'>
+			<div className='space-y-6'>
+				<SectionHeader
+					label='Contact'
+					title="Let's collaborate"
+					copy="Excited about software engineering and machine learning opportunities. Let's discuss how I can contribute to your team."
+				/>
+				<ul className='grid gap-3 text-sm text-slate-600 dark:text-slate-300'>
 						{CONTACT_INFO.map((item) => {
 							const Icon = item.icon;
 							return (

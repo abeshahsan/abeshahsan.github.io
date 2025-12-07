@@ -9,13 +9,13 @@ const CTA_LINKS = [
 ];
 
 const HIGHLIGHTS = [
-	{ icon: HiAcademicCap, text: "Thesis: Transformer-based weakly supervised semantic segmentation (Achieved mIoU 50%)" },
+	{ icon: HiAcademicCap, text: "Research: Developed transformer-based weakly supervised semantic segmentation model achieving 50% mIoU" },
 	{
 		icon: HiCode,
-		text: "Projects: ChessDuel (real-time multiplayer), Voice Reminder (speech + NLU), Photo Wizard (from-scratch image editor)",
+		text: "Key Projects: ChessDuel (real-time multiplayer chess), Voice Reminder (NLU-powered task manager), Photo Wizard (NumPy-based image editor)",
 	},
-	{ icon: HiBriefcase, text: "Experience: Game Development Trainee at Battery Low Interactive — Unity, C#, physics, UI" },
-	{ icon: HiLightBulb, text: "Currently seeking full-time roles where I can grow and contribute" },
+	{ icon: HiBriefcase, text: "Experience: Game Development Trainee at Battery Low Interactive specializing in Unity, C#, and interactive gameplay" },
+	{ icon: HiLightBulb, text: "Actively seeking software engineering opportunities to contribute to innovative projects and teams" },
 ];
 
 export default function Hero() {
@@ -39,17 +39,16 @@ export default function Hero() {
 					<p className='text-sm uppercase tracking-[0.6em] text-emerald-600 dark:text-emerald-300'>
 						Hi — I'm Abesh Ahsan
 					</p>
-					<h1 className='text-2xl font-bold leading-tight text-slate-900 dark:text-white md:text-3xl lg:text-4xl'>
-						Software Developer & ML Enthusiast
-						<span className='block text-emerald-600 dark:text-emerald-400'>Always Building Something New</span>
-					</h1>
-					<p className='text-lg font-medium text-slate-700 dark:text-slate-200'>
-						I create modern web, mobile, desktop, and vision-based AI applications. Fast learner, framework
-						explorer, and passionate builder.
-					</p>
-					<p className='text-base leading-relaxed text-slate-600 dark:text-slate-300'>
-						CSE graduate from IUT who loves turning ideas into real products. I work across full-stack development, mobile apps, desktop tools, and machine learning — especially semantic segmentation. I learn fast, adapt quickly, and continuously push myself to build better software.
-					</p>
+				<h1 className='text-2xl font-bold leading-tight text-slate-900 dark:text-white md:text-3xl lg:text-4xl'>
+					Software Engineer & ML Enthusiast
+					<span className='block text-emerald-600 dark:text-emerald-400'>Transforming Ideas into Scalable Solutions</span>
+				</h1>
+				<p className='text-lg font-medium text-slate-700 dark:text-slate-200'>
+					I craft modern web, mobile, and desktop applications with a focus on clean architecture and AI-powered features. Rapid learner, technology enthusiast, and dedicated problem solver.
+				</p>
+				<p className='text-base leading-relaxed text-slate-600 dark:text-slate-300'>
+					Recent CSE graduate from IUT passionate about building impactful software across the full stack. My experience spans web development, mobile apps, desktop tools, and machine learning — particularly semantic segmentation research. I thrive on learning new technologies and applying them to solve real-world problems.
+				</p>
 					<ul className='space-y-3 text-sm text-slate-600 dark:text-slate-300'>
 						{HIGHLIGHTS.map((item, index) => {
 							const Icon = item.icon;

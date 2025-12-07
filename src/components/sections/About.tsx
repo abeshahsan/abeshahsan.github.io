@@ -37,8 +37,8 @@ export default function About() {
 			<div className='space-y-8'>
 				<SectionHeader
 					label='About'
-					title='Always learning, always building'
-					copy='Recent graduate with hands-on experience in software development and machine learning research.'
+					title='Continuous learner, passionate builder'
+					copy='Recent graduate combining practical software engineering with machine learning research experience.'
 				/>
 				<div className='space-y-4 text-base leading-relaxed text-slate-600/95 dark:text-slate-300/90'>
 					<p>

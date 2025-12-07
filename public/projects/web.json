@@ -2,7 +2,7 @@
   {
     "id": "chessduel",
     "title": "ChessDuel",
-    "description": "Real-time Multiplayer Chess Platform — Developed with Next.js and TypeScript using an MVC-style architecture with Mongoose models, service layer, and API controllers. Implemented secure NextAuth OAuth authentication with strict email validation and JWT session checks. Designed for scalability, maintainability, and clean separation of concerns.",
+    "description": "Enterprise-grade real-time multiplayer chess platform built with Next.js and TypeScript. Features clean MVC architecture with Mongoose models, dedicated service layer, and RESTful API controllers. Implements secure NextAuth OAuth with email validation and JWT-based session management. Engineered for scalability, maintainability, and production-ready performance.",
     "stack": ["Next.js", "MongoDB", "NextAuth", "JWT", "Socket.io", "Redux Toolkit", "Material-UI"],
     "github": "https://github.com/abeshahsan/ChessDuel",
     "demo": null,
@@ -11,7 +11,7 @@
   {
     "id": "leetvscode",
     "title": "LeetVSCode",
-    "description": "An intelligent task management VS Code extension with a split-screen interface. Features advanced task organization and intelligent behavior for enhanced productivity.",
+    "description": "Productivity-focused VS Code extension offering intelligent task management through an intuitive split-screen interface. Incorporates advanced task organization algorithms and smart behavioral patterns to streamline developer workflows and boost coding efficiency.",
     "stack": ["VS Code Extension API", "Node.js", "React.js", "Tailwind CSS"],
     "github": "https://github.com/abeshahsan/LeetVSCode",
     "demo": null,
@@ -20,7 +20,7 @@
   {
     "id": "tilawah",
     "title": "Tilawah",
-    "description": "A single-page web application (SPA) for listening to Quran recitations from various Qaris. Features include seamless playback with resume support, search by Surah or Qari, favorites, playlist management, and live updates – all implemented using EJS and jQuery without modern frontend frameworks.",
+    "description": "Feature-rich single-page application for streaming Quran recitations from renowned Qaris worldwide. Delivers seamless audio playback with resume capability, intelligent search (by Surah or Qari), favorites system, playlist management, and real-time updates. Demonstrates mastery of vanilla JavaScript patterns using EJS and jQuery without modern framework dependencies.",
     "stack": ["jQuery", "JavaScript", "Axios", "EJS", "Node.js", "Express.js", "MySQL"],
     "github": "https://github.com/abeshahsan/Tilawah",
     "demo": null,
