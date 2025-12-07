@@ -6,7 +6,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-	base: '/Portfolio/',
+	base: '/portfolio/',
 	plugins: [react(), tailwindcss(), compression({ algorithm: "brotliCompress" }), compression({ algorithm: "gzip" })],
 	build: {
 		minify: "esbuild",
