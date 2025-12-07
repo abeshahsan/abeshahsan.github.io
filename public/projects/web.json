@@ -4,7 +4,7 @@
     "title": "ChessDuel",
     "description": "Enterprise-grade real-time multiplayer chess platform built with Next.js and TypeScript. Features clean MVC architecture with Mongoose models, dedicated service layer, and RESTful API controllers. Implements secure NextAuth OAuth with email validation and JWT-based session management. Engineered for scalability, maintainability, and production-ready performance.",
     "stack": ["Next.js", "MongoDB", "NextAuth", "JWT", "Socket.io", "Redux Toolkit", "Material-UI"],
-    "github": "https://github.com/abeshahsan/ChessDuel",
+    "github": "https://github.com/abeshahsan/chess",
     "demo": null,
     "image": null
   },
@@ -13,7 +13,7 @@
     "title": "LeetVSCode",
     "description": "Productivity-focused VS Code extension offering intelligent task management through an intuitive split-screen interface. Incorporates advanced task organization algorithms and smart behavioral patterns to streamline developer workflows and boost coding efficiency.",
     "stack": ["VS Code Extension API", "Node.js", "React.js", "Tailwind CSS"],
-    "github": "https://github.com/abeshahsan/LeetVSCode",
+    "github": null,
     "demo": null,
     "image": null
   },

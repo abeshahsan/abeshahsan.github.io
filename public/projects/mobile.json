@@ -4,7 +4,7 @@
     "title": "Voice Reminder",
     "description": "AI-powered task management mobile application featuring an innovative split-screen design: visual todo list above, conversational chatbot below. Leverages advanced Natural Language Understanding for intuitive voice command processing, SQLite for robust data persistence, and BLoC pattern for seamless real-time synchronization between voice interactions and UI updates.",
     "stack": ["Flutter", "SQLite", "BLoC", "Speech Recognition", "NLU"],
-    "github": "https://github.com/abeshahsan/VoiceReminder",
+    "github": null,
     "demo": null,
     "image": null
   }
