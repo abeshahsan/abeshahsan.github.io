@@ -2,7 +2,7 @@
   {
     "id": "photo-wizard",
     "title": "Photo Wizard",
-    "description": "Fully-featured desktop image editor built entirely from scratch using pure NumPy—no OpenCV or PIL dependencies. Implements comprehensive editing toolkit including crop, resize, blur, sharpen, exposure adjustment, brightness, contrast, saturation, warmth controls, geometric transforms, and custom filter creation. Demonstrates deep understanding of image processing algorithms and matrix operations.",
+    "description": "Fully-featured desktop image editor built entirely from scratch using pure NumPy&mdash;no OpenCV or PIL dependencies. Implements comprehensive editing toolkit including crop, resize, blur, sharpen, exposure adjustment, brightness, contrast, saturation, warmth controls, geometric transforms, and custom filter creation. Demonstrates deep understanding of image processing algorithms and matrix operations.",
     "stack": ["NumPy", "PyQt6"],
     "github": "https://github.com/abeshahsan/PhotoWizard",
     "demo": null,

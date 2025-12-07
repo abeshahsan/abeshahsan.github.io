@@ -37,17 +37,17 @@ export default function Hero() {
 			<div className='relative z-10 flex flex-col gap-10 text-center md:grid md:grid-cols-[1.1fr_0.9fr] md:items-center md:text-left'>
 				<div className='space-y-6'>
 					<p className='text-sm uppercase tracking-[0.6em] text-emerald-600 dark:text-emerald-300'>
-						Hi — I'm Abesh Ahsan
+						Hi &mdash; I'm Abesh Ahsan
 					</p>
 				<h1 className='text-2xl font-bold leading-tight text-slate-900 dark:text-white md:text-3xl lg:text-4xl'>
-					Software Engineer & ML Enthusiast
+					Software Engineer &amp; ML Enthusiast
 					<span className='block text-emerald-600 dark:text-emerald-400'>Transforming Ideas into Scalable Solutions</span>
 				</h1>
 				<p className='text-lg font-medium text-slate-700 dark:text-slate-200'>
-					I craft modern web, mobile, and desktop applications with a focus on clean architecture and AI-powered features. Rapid learner, technology enthusiast, and dedicated problem solver.
+					I create cutting-edge desktop, mobile, and web applications with an emphasis on clean architecture. I am a quick learner, passionate about technology, and committed to solving problems.
 				</p>
 				<p className='text-base leading-relaxed text-slate-600 dark:text-slate-300'>
-					Recent CSE graduate from IUT passionate about building impactful software across the full stack. My experience spans web development, mobile apps, desktop tools, and machine learning — particularly semantic segmentation research. I thrive on learning new technologies and applying them to solve real-world problems.
+					I am a recent graduate with a degree in Computer Science and Engineering from IUT, and I am deeply passionate about developing software that makes a meaningful impact across all layers of technology. My experience encompasses creating desktop tools, mobile applications, full-stack and machine learning. I take great pleasure in learning new technologies and applying them to address practical challenges effectively.
 				</p>
 					<ul className='space-y-3 text-sm text-slate-600 dark:text-slate-300'>
 						{HIGHLIGHTS.map((item, index) => {

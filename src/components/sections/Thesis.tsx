@@ -29,41 +29,72 @@ export default function Thesis() {
 						</div>
 						<div className='space-y-4 text-base leading-relaxed text-slate-600 dark:text-slate-300'>
 							<p>
-								For my undergraduate thesis, I explored improving fine-grained object understanding in
-								weakly supervised semantic segmentation, where only image-level labels are used. My work
-								focused on generating more detailed Class Activation Maps (CAMs) through enhanced feature
-								extraction.
+								Enhancing fine-grained object understanding in weakly supervised semantic
+								segmentation—where just image-level labels are available rather than expensive
+								pixel-level masks—was the main emphasis of my undergraduate thesis. The primary goal was
+								to develop more accurate and detailed Class Activation Maps (CAMs), which serve as the
+								foundation for segmentation pipelines with minimal supervision. I employed UniCL
+								alongside a Swin Transformer, opting for this combination over commonly used encoders
+								such as CLIP or ViT, to enhance the capture of local features. The windowed
+								self-attention mechanism of the Swin Transformer enabled better local feature
+								representation and greater spatial consistency.
 							</p>
+							<p>I experimented with multiple stages of the WSSS pipeline, including:</p>
+							<ul className='space-y-2 text-sm'>
+								<li className='flex items-start gap-3'>
+									<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
+									<span>CAM generation using transformer-based features</span>
+								</li>
+								<li className='flex items-start gap-3'>
+									<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
+									<span>Refinement and smoothing through affinity-based consistency</span>
+								</li>
+								<li className='flex items-start gap-3'>
+									<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
+									<span>
+										Utilizing intermediate encoder features to improve boundary precision and reduce
+										noise
+									</span>
+								</li>
+								<li className='flex items-start gap-3'>
+									<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
+									<span>
+										Iterative mask enhancement to recover fine-grained details in complex regions
+									</span>
+								</li>
+							</ul>
 							<p>
-								Instead of common encoders like CLIP or ViT, I used UniCL with a Swin Transformer for
-								stronger local feature representation. I experimented with CAM generation, refinement, and
-								affinity-enhancement techniques using intermediate encoder features.
-							</p>
-							<p>
-								The model achieved a mean IoU of 50%, producing detailed segmentation masks with improved
-								boundary sharpness and fine-grained regions compared to baseline methods.
+								My method generated segmentation masks with clearer boundaries, more uniform region
+								coverage, and enhanced preservation of fine details compared to conventional techniques.
+								The final model achieved a mean IoU of 50%, which, while below the SOTA benchmark, (mean
+								IoU of 74%), demonstrated significant improvements in local detail sharpness, object
+								boundary accuracy, and spatial coherence across many categories.
 							</p>
 							<div className='mt-6 rounded-xl border border-purple-100/70 bg-purple-50/50 p-4 dark:border-purple-500/20 dark:bg-purple-500/5'>
 								<h4 className='mb-3 text-sm font-semibold uppercase tracking-wider text-purple-600 dark:text-purple-300'>
-									Key Learnings
+									This project strengthened my practical understanding of:
 								</h4>
 								<ul className='space-y-2 text-sm'>
-									<li className='flex items-start gap-3'>
-										<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
-										<span>Transformer architectures (Swin, UniCL, ViT-family)</span>
-									</li>
-									<li className='flex items-start gap-3'>
-										<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
-										<span>CAM generation and refinement pipelines</span>
-									</li>
-									<li className='flex items-start gap-3'>
-										<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
-										<span>Weakly supervised segmentation strategies</span>
-									</li>
-									<li className='flex items-start gap-3'>
-										<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
-										<span>ML experimentation, evaluation, and reproducible research workflows</span>
-									</li>
+								<li className='flex items-start gap-3'>
+									<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
+									<span>Transformer architectures (Swin, ViT-family, UniCL)</span>
+								</li>
+								<li className='flex items-start gap-3'>
+									<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
+									<span>Weakly supervised segmentation pipelines</span>
+								</li>
+								<li className='flex items-start gap-3'>
+									<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
+									<span>CAM refinement, affinity propagation, and mask generation</span>
+								</li>
+								<li className='flex items-start gap-3'>
+									<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
+									<span>Designing and evaluating ML experiments</span>
+								</li>
+								<li className='flex items-start gap-3'>
+									<span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-500 dark:bg-purple-400' />
+									<span>Building reproducible research codebases</span>
+								</li>
 								</ul>
 							</div>
 						</div>

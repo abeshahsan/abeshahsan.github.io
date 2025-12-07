@@ -42,16 +42,16 @@ export default function About() {
 				/>
 				<div className='space-y-4 text-base leading-relaxed text-slate-600/95 dark:text-slate-300/90'>
 					<p>
-						I'm Abesh Ahsan, a CSE graduate from IUT (CGPA 3.72) hands-on projects across web, mobile, desktop, and ML domains. I'm passionate about building software and learn best by creating. When I discover a new technology, I immediately build something with it.
+						My name is Abesh Ahsan, and I am a graduate in Computer Science and Engineering from IUT, where I earned a CGPA of 3.72. I have hands-on experience with various real-world projects in desktop, mobile, web development, and machine learning. My passion lies in software development, as I believe that practical creation is the most effective way to learn. I enthusiastically embrace new technologies as I encounter them.
 					</p>
 					<p>
-						I love working end-to-end: designing, coding, debugging, and refining until it feels right. This has led me to explore React, Next.js, Flutter, PyQt, Unity, Node.js, and more. Each framework is an opportunity to build something useful.
+						I enjoy managing projects from conception to completion, engaging in all aspects, including design, coding, debugging, and refining the product until it meets my standards. Recently, I have been exploring technologies, such as React, Next.js, Flutter, PyQt, Unity, and Node.js, each offering a unique opportunity to create something impactful.
 					</p>
 					<p>
-						My undergraduate thesis focused on transformer-based weakly supervised semantic segmentation, improving fine-grained detail capture. This strengthened my understanding of computer vision, transformers, and research workflows.
+						For my undergraduate thesis, I focused on transformer-based <i>weakly supervised semantic segmentation</i>, which significantly improved the capture of fine-grained details in images. This project enhanced my understanding of transformers, computer vision, and research methodologies.
 					</p>
 					<p>
-						I'm looking for opportunities where I can learn quickly, contribute meaningfully, and build impactful products. I love challenges, adapt fast, and stay curious about new frameworks and concepts.
+						I actively seek opportunities to learn quickly and apply my knowledge effectively in real-world scenarios. I am committed to continuously expanding my skill set and staying informed about emerging technologies, which enables me to tackle complex challenges and deliver innovative solutions.
 					</p>
 				</div>
 				<div className='grid gap-6 md:grid-cols-2'>
