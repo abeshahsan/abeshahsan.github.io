@@ -97,7 +97,7 @@ export default function About() {
 							})}
 						</ul>
 						<a
-							href='/Abesh_Ahsan__CV.pdf'
+							href={`${import.meta.env.BASE_URL}Abesh_Ahsan__CV.pdf`}
 							className='inline-flex items-center gap-2 rounded-full border border-emerald-200/70 bg-linear-to-r from-emerald-50 to-sky-50 px-5 py-2.5 text-sm font-semibold text-emerald-700 shadow-sm transition hover:scale-105 hover:border-emerald-300 hover:shadow-md dark:border-emerald-500/30 dark:from-emerald-500/10 dark:to-sky-500/10 dark:text-emerald-300 dark:hover:border-emerald-400/50'
 							download
 						>
