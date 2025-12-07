@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { FiExternalLink, FiMail } from "react-icons/fi";
-import { HiAcademicCap, HiBriefcase, HiLightBulb, HiCode } from "react-icons/hi";
+import { HiAcademicCap, HiBriefcase, HiLightBulb, HiCode, HiDownload } from "react-icons/hi";
 
 const CTA_LINKS = [
 	{ label: "View My Projects", href: "#projects", primary: true, icon: FiExternalLink },
 	{ label: "Contact Me", href: "#contact", primary: false, icon: FiMail },
+	{ label: "Download CV", href: "/Abesh_Ahsan__CV.pdf", primary: false, icon: HiDownload, download: true },
 ];
 
 const HIGHLIGHTS = [
@@ -64,20 +65,21 @@ export default function Hero() {
 						})}
 					</ul>
 					<div className='flex flex-wrap justify-center gap-4 md:justify-start'>
-						{CTA_LINKS.map((cta) => {
-							const Icon = cta.icon;
-							return (
-								<motion.a
-									key={cta.href}
-									href={cta.href}
-									className={
-										cta.primary
-											? "inline-flex w-full items-center justify-center gap-2 rounded-full bg-linear-to-r from-emerald-500 via-emerald-400 to-sky-400 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:shadow-xl hover:brightness-105 dark:shadow-emerald-500/20 sm:w-auto"
-											: "inline-flex w-full items-center justify-center gap-2 rounded-full border border-emerald-100/70 bg-white/80 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:bg-white hover:text-emerald-600 dark:border-emerald-500/30 dark:bg-slate-900/60 dark:text-emerald-200 dark:hover:border-emerald-400/50 dark:hover:bg-slate-900/80 sm:w-auto"
-									}
-									whileHover={{ y: -2, scale: 1.02 }}
-									whileTap={{ scale: 0.98 }}
-								>
+					{CTA_LINKS.map((cta) => {
+						const Icon = cta.icon;
+						return (
+							<motion.a
+								key={cta.href}
+								href={cta.href}
+								{...(cta.download && { download: true })}
+								className={
+									cta.primary
+										? "inline-flex w-full items-center justify-center gap-2 rounded-full bg-linear-to-r from-emerald-500 via-emerald-400 to-sky-400 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:shadow-xl hover:brightness-105 dark:shadow-emerald-500/20 sm:w-auto"
+										: "inline-flex w-full items-center justify-center gap-2 rounded-full border border-emerald-100/70 bg-white/80 px-6 py-3 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:bg-white hover:text-emerald-600 dark:border-emerald-500/30 dark:bg-slate-900/60 dark:text-emerald-200 dark:hover:border-emerald-400/50 dark:hover:bg-slate-900/80 sm:w-auto"
+								}
+								whileHover={{ y: -2, scale: 1.02 }}
+								whileTap={{ scale: 0.98 }}
+							>
 									{cta.label}
 									<Icon className='h-4 w-4' />
 								</motion.a>

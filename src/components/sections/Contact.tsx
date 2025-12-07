@@ -33,7 +33,7 @@ export default function Contact() {
 							return (
 								<li
 									key={item.label}
-									className='flex gap-3 rounded-2xl border border-slate-200/70 bg-gradient-to-br from-white to-slate-50/50 px-4 py-4 backdrop-blur transition hover:border-emerald-200 hover:shadow-md dark:border-slate-800/70 dark:from-slate-900/80 dark:to-slate-900/50 dark:hover:border-emerald-500/30'
+									className='flex gap-3 rounded-2xl border border-slate-200/70 bg-linear-to-br from-white to-slate-50/50 px-4 py-4 backdrop-blur transition hover:border-emerald-200 hover:shadow-md dark:border-slate-800/70 dark:from-slate-900/80 dark:to-slate-900/50 dark:hover:border-emerald-500/30'
 								>
 									<Icon className='mt-1 h-5 w-5 shrink-0 text-emerald-600 dark:text-emerald-400' />
 									<div className='flex flex-col gap-1'>
