@@ -1,11 +1,20 @@
 [
-  {
-    "id": "photo-wizard",
-    "title": "Photo Wizard",
-    "description": "Fully-featured desktop image editor built entirely from scratch using pure NumPy&mdash;no OpenCV or PIL dependencies. Implements comprehensive editing toolkit including crop, resize, blur, sharpen, exposure adjustment, brightness, contrast, saturation, warmth controls, geometric transforms, and custom filter creation. Demonstrates deep understanding of image processing algorithms and matrix operations.",
-    "stack": ["NumPy", "PyQt6"],
-    "github": "https://github.com/abeshahsan/Photo-Wizard",
-    "demo": null,
-    "image": null
-  }
+	{
+		"id": "photo-wizard",
+		"title": "Photo Wizard",
+		"description": "Fully-featured desktop image editor built entirely from scratch using pure NumPy&mdash;no OpenCV or PIL dependencies. Implements comprehensive editing toolkit including crop, resize, blur, sharpen, exposure adjustment, brightness, contrast, saturation, warmth controls, geometric transforms, and custom filter creation. Demonstrates deep understanding of image processing algorithms and matrix operations.",
+		"stack": ["NumPy", "PyQt6"],
+		"github": "https://github.com/abeshahsan/Photo-Wizard",
+		"demo": null,
+		"image": null
+	},
+	{
+		"id": "leetvscode",
+		"title": "LeetVSCode",
+		"description": "Productivity-focused VS Code extension offering intelligent task management through an intuitive split-screen interface. Incorporates advanced task organization algorithms and smart behavioral patterns to streamline developer workflows and boost coding efficiency.",
+		"stack": ["VS Code Extension API", "Node.js", "React.js", "Tailwind CSS"],
+		"github": "https://github.com/abeshahsan/LeetVSCode",
+		"demo": null,
+		"image": null
+	}
 ]

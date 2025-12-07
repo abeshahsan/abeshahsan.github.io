@@ -1,29 +1,22 @@
 [
-  {
-    "id": "chessduel",
-    "title": "ChessDuel",
-    "description": "Enterprise-grade real-time multiplayer chess platform built with Next.js and TypeScript. Features clean MVC architecture with Mongoose models, dedicated service layer, and RESTful API controllers. Implements secure NextAuth OAuth with email validation and JWT-based session management. Engineered for scalability, maintainability, and production-ready performance.",
-    "stack": ["Next.js", "MongoDB", "NextAuth", "JWT", "Socket.io", "Redux Toolkit", "Material-UI"],
-    "github": "https://github.com/abeshahsan/chess",
-    "demo": null,
-    "image": null
-  },
-  {
-    "id": "leetvscode",
-    "title": "LeetVSCode",
-    "description": "Productivity-focused VS Code extension offering intelligent task management through an intuitive split-screen interface. Incorporates advanced task organization algorithms and smart behavioral patterns to streamline developer workflows and boost coding efficiency.",
-    "stack": ["VS Code Extension API", "Node.js", "React.js", "Tailwind CSS"],
-    "github": null,
-    "demo": null,
-    "image": null
-  },
-  {
-    "id": "tilawah",
-    "title": "Tilawah",
-    "description": "Feature-rich single-page application for streaming Quran recitations from renowned Qaris worldwide. Delivers seamless audio playback with resume capability, intelligent search (by Surah or Qari), favorites system, playlist management, and real-time updates. Demonstrates mastery of vanilla JavaScript patterns using EJS and jQuery without modern framework dependencies.",
-    "stack": ["jQuery", "JavaScript", "Axios", "EJS", "Node.js", "Express.js", "MySQL"],
-    "github": "https://github.com/abeshahsan/Tilawah",
-    "demo": null,
-    "image": null
-  }
+	{
+		"id": "chessduel",
+		"title": "ChessDuel",
+		"description": "Enterprise-grade real-time multiplayer chess platform built with Next.js and TypeScript. Features clean MVC architecture with Mongoose models, dedicated service layer, and RESTful API controllers. Implements secure NextAuth OAuth with email validation and JWT-based session management. Engineered for scalability, maintainability, and production-ready performance.",
+		"stack": ["Next.js", "MongoDB", "NextAuth", "JWT", "Socket.io", "Redux Toolkit", "Material-UI"],
+		"github": "https://github.com/abeshahsan/ChessDuel",
+		"demo": null,
+		"image": null
+	},
+
+	{
+		"id": "tilawah",
+		"title": "Tilawah",
+		"description": "Feature-rich single-page application for streaming Quran recitations from renowned Qaris worldwide. Delivers seamless audio playback with resume capability, intelligent search (by Surah or Qari), favorites system, playlist management, and real-time updates. Demonstrates mastery of vanilla JavaScript patterns using EJS and jQuery without modern framework dependencies.",
+		"stack": ["jQuery", "JavaScript", "Axios", "EJS", "Node.js", "Express.js", "MySQL"],
+		"github": "https://github.com/abeshahsan/Tilawah",
+		"demo": null,
+		"image": null
+	}
 ]
+
