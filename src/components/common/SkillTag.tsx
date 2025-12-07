@@ -70,18 +70,18 @@ export default function SkillTag({ skill }: SkillTagProps) {
 	const iconClass = iconTone[skill.level] ?? iconTone.Beginner;
 	return (
 		<li
-			className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium shadow-sm shadow-slate-200/60 backdrop-blur transition-colors ${levelClass}`}
+			className={`inline-flex items-center gap-1.5 sm:gap-2 rounded-full border px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium shadow-sm shadow-slate-200/60 backdrop-blur transition-colors ${levelClass}`}
 			aria-label={`${skill.name} proficiency ${skill.level}`}
 		>
 			{Icon ? (
 				<Icon
 					aria-hidden='true'
 					className={iconClass}
-					size={16}
+					size={14}
 				/>
 			) : null}
 			<span>{skill.name}</span>
-			<span className={`text-xs ${badgeTone}`}>{skill.level}</span>
+			<span className={`text-[10px] sm:text-xs ${badgeTone}`}>{skill.level}</span>
 		</li>
 	);
 }

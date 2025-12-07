@@ -30,7 +30,7 @@ export default function Experience() {
 						<p className='mb-4 text-base font-medium text-emerald-600 dark:text-emerald-400'>
 							Battery Low Interactive
 						</p>
-						<div className='space-y-4 text-base leading-relaxed text-slate-600 dark:text-slate-300'>
+						<div className='space-y-4 text-base leading-relaxed text-slate-600 dark:text-slate-300 text-justify'>
 							<p>
 								During my industrial training at Battery Low Interactive, I learned to design and build
 								games from the ground up using Unity and C#. I developed several mini-games to understand

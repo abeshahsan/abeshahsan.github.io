@@ -60,22 +60,22 @@ export default function Projects() {
 	return (
 		<motion.section
 			id='projects'
-			className='rounded-[2.25rem] border border-slate-100/70 bg-linear-to-br from-white via-slate-50 to-emerald-50/30 p-10 shadow-[0_40px_160px_-80px] shadow-emerald-500/25 dark:border-slate-800/70 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900'
+			className='rounded-3xl sm:rounded-[2.25rem] border border-slate-100/70 bg-linear-to-br from-white via-slate-50 to-emerald-50/30 p-6 sm:p-8 md:p-10 shadow-[0_40px_160px_-80px] shadow-emerald-500/25 dark:border-slate-800/70 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900'
 			initial={{ opacity: 0, y: 32 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			viewport={{ once: true, amount: 0.2 }}
 			transition={{ duration: 0.55, ease: "easeOut" }}
-		>
-			<div className='space-y-8'>
+			>
+			<div className='space-y-6 sm:space-y-8'>
 				<SectionHeader
 					label='Projects'
 					title='Selected work'
 					copy='From ML pipelines to design systems, here are a few favorite builds.'
 				/>
 				<div
-					className='-mx-1 flex gap-3 overflow-x-auto pb-2 text-sm font-semibold md:flex-wrap md:overflow-visible md:pb-0'
+					className='flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm font-semibold'
 					aria-label='Project filters'
-				>
+					>
 					{["all", ...PROJECT_SOURCES.map((s) => s.id)].map((value) => {
 						const label =
 							value === "all" ? "All" : PROJECT_SOURCES.find((s) => s.id === value)?.label ?? value;
@@ -84,7 +84,7 @@ export default function Projects() {
 								key={value}
 								type='button'
 								onClick={() => setFilter(value)}
-								className={`shrink-0 rounded-full px-4 py-2 whitespace-nowrap transition ${
+								className={`rounded-full px-3 py-1.5 sm:px-4 sm:py-2 whitespace-nowrap transition ${
 									filter === value
 										? "bg-emerald-500 text-white"
 									: "border border-slate-200 bg-white/80 text-slate-600 hover:border-emerald-400 hover:text-emerald-500 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-200"
@@ -101,7 +101,7 @@ export default function Projects() {
 						{error}
 					</p>
 				) : null}
-				<div className='grid gap-6 md:grid-cols-2'>
+				<div className='grid gap-4 sm:gap-6 md:grid-cols-2'>
 					{filteredProjects.map((project) => (
 						<ProjectCard
 							key={project.id}
@@ -124,19 +124,19 @@ export default function Projects() {
 function ProjectDialog({ project, onClose }: { project: Project; onClose: () => void }) {
 	return (
 		<div
-			className='fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 p-6'
+			className='fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 p-4 sm:p-6'
 			role='dialog'
 			aria-modal='true'
 			onClick={onClose}
 		>
 			<div
-				className='max-w-xl rounded-3xl border border-slate-700/80 bg-slate-900/90 p-8 text-white shadow-2xl'
+				className='max-w-xl max-h-[90vh] overflow-y-auto rounded-3xl border border-slate-700/80 bg-slate-900/90 p-6 sm:p-8 text-white shadow-2xl'
 				onClick={(event) => event.stopPropagation()}
-			>
+				>
 				<div className='flex items-start justify-between gap-4'>
 					<div>
-						<p className='text-xs uppercase tracking-[0.4em] text-emerald-400'>{project.category}</p>
-						<h3 className='text-2xl font-semibold'>{project.title}</h3>
+						<p className='text-[10px] sm:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] text-emerald-400'>{project.category}</p>
+						<h3 className='text-lg sm:text-2xl font-semibold'>{project.title}</h3>
 					</div>
 					<button
 						type='button'
@@ -147,8 +147,8 @@ function ProjectDialog({ project, onClose }: { project: Project; onClose: () => 
 						&times;
 					</button>
 				</div>
-				<p className='mt-4 text-sm text-slate-200'>{project.description}</p>
-				<ul className='mt-6 flex flex-wrap gap-2'>
+				<p className='mt-3 sm:mt-4 text-xs sm:text-sm text-slate-200 text-justify'>{project.description}</p>
+				<ul className='mt-4 sm:mt-6 flex flex-wrap gap-1.5 sm:gap-2'>
 					{project.stack.map((item) => (
 						<li
 							key={item}

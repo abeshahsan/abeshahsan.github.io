@@ -66,16 +66,16 @@ export default function Skills() {
 						{error}
 					</p>
 				) : null}
-				<div className='grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
+				<div className='grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3'>
 					{SOURCES.map((source) => (
 						<div
 							key={source.id}
-							className='relative space-y-4 rounded-2xl border border-slate-100/80 bg-linear-to-br from-white/90 via-emerald-50/30 to-white/90 p-6 shadow-[0_30px_80px_-60px] shadow-emerald-500/15 dark:border-slate-800 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-900/80'
+							className='relative space-y-3 sm:space-y-4 rounded-2xl border border-slate-100/80 bg-linear-to-br from-white/90 via-emerald-50/30 to-white/90 p-4 sm:p-6 shadow-[0_30px_80px_-60px] shadow-emerald-500/15 dark:border-slate-800 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-900/80'
 						>
-							<h3 className='text-sm font-semibold uppercase tracking-[0.4em] text-emerald-500 dark:text-emerald-300'>
+							<h3 className='text-xs sm:text-sm font-semibold uppercase tracking-[0.4em] text-emerald-500 dark:text-emerald-300'>
 								{source.label}
 							</h3>
-							<ul className='flex flex-wrap gap-3'>
+							<ul className='flex flex-wrap gap-2 sm:gap-3'>
 								{data[source.id]?.map((skill) => (
 									<SkillTag
 										key={skill.name}

@@ -27,7 +27,7 @@ export default function Thesis() {
 								January 2024 – October 2025
 							</span>
 						</div>
-						<div className='space-y-4 text-base leading-relaxed text-slate-600 dark:text-slate-300'>
+						<div className='space-y-4 text-base leading-relaxed text-slate-600 dark:text-slate-300 text-justify'>
 						<p>
 							Enhancing <em className='text-purple-700 dark:text-purple-300'>fine-grained object understanding</em> in <strong>weakly supervised semantic segmentation</strong>—where just <em>image-level labels</em> are available rather than expensive <em>pixel-level masks</em>—was the main emphasis of my undergraduate thesis. The primary goal was to develop more accurate and detailed <strong className='text-purple-700 dark:text-purple-300'>Class Activation Maps (CAMs)</strong>, which serve as the foundation for segmentation pipelines with minimal supervision. I employed <strong className='text-purple-600 dark:text-purple-400'>UniCL</strong> alongside a <strong className='text-purple-600 dark:text-purple-400'>Swin Transformer</strong>, opting for this combination over commonly used encoders such as <span className='font-semibold'>CLIP</span> or <span className='font-semibold'>ViT</span>, to enhance the capture of <em>local features</em>. The <em className='text-purple-700 dark:text-purple-300'>windowed self-attention mechanism</em> of the Swin Transformer enabled better <strong>local feature representation</strong> and greater <strong>spatial consistency</strong>.
 						</p>

@@ -28,19 +28,19 @@ export default function About() {
 	return (
 		<motion.section
 			id='about'
-			className='rounded-[2.25rem] border border-slate-100/70 bg-linear-to-br from-white via-slate-50 to-emerald-50/25 p-10 shadow-[0_40px_120px_-80px] shadow-emerald-500/20 dark:border-slate-800/70 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900'
+			className='rounded-3xl sm:rounded-[2.25rem] border border-slate-100/70 bg-linear-to-br from-white via-slate-50 to-emerald-50/25 p-6 sm:p-8 md:p-10 shadow-[0_40px_120px_-80px] shadow-emerald-500/20 dark:border-slate-800/70 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900'
 			initial={{ opacity: 0, y: 32 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			viewport={{ once: true, amount: 0.3 }}
 			transition={{ duration: 0.5, ease: "easeOut" }}
-		>
-			<div className='space-y-8'>
+			>
+			<div className='space-y-6 sm:space-y-8'>
 				<SectionHeader
 					label='About'
 					title='Continuous learner, passionate builder'
 					copy='Recent graduate combining practical software engineering with machine learning research experience.'
 				/>
-				<div className='space-y-4 text-base leading-relaxed text-slate-600/95 dark:text-slate-300/90'>
+				<div className='space-y-3 sm:space-y-4 text-sm sm:text-base leading-relaxed text-slate-600/95 dark:text-slate-300/90 text-justify'>
 					<p>
 						My name is <strong className='text-slate-900 dark:text-white'>Abesh Ahsan</strong>, and I am a graduate in <strong>Computer Science and Engineering</strong> from <strong className='text-emerald-700 dark:text-emerald-300'>IUT</strong>, where I earned a CGPA of <strong className='text-emerald-600 dark:text-emerald-400'>3.72</strong>. I have <em>hands-on experience</em> with various real-world projects in <strong>desktop</strong>, <strong>mobile</strong>, <strong>web development</strong>, and <strong>machine learning</strong>. My passion lies in software development, as I believe that <em className='text-emerald-700 dark:text-emerald-300'>practical creation is the most effective way to learn</em>. I enthusiastically embrace new technologies as I encounter them.
 					</p>
@@ -54,43 +54,43 @@ export default function About() {
 						I actively seek opportunities to <strong>learn quickly</strong> and <strong>apply my knowledge effectively</strong> in real-world scenarios. I am committed to <em>continuously expanding my skill set</em> and staying informed about <strong className='text-emerald-700 dark:text-emerald-300'>emerging technologies</strong>, which enables me to tackle <strong>complex challenges</strong> and deliver <strong className='text-emerald-600 dark:text-emerald-400'>innovative solutions</strong>.
 					</p>
 				</div>
-				<div className='grid gap-6 md:grid-cols-2'>
-					<div className='space-y-4 rounded-2xl border border-slate-100/70 bg-linear-to-br from-white/95 via-slate-50/50 to-white/90 p-6 shadow-[0_25px_80px_-70px] shadow-slate-900/15 dark:border-slate-800 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-900/80'>
-						<h3 className='flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.4em] text-emerald-600 dark:text-emerald-400'>
+				<div className='grid gap-4 sm:gap-6 md:grid-cols-2'>
+					<div className='space-y-3 sm:space-y-4 rounded-2xl border border-slate-100/70 bg-linear-to-br from-white/95 via-slate-50/50 to-white/90 p-4 sm:p-6 shadow-[0_25px_80px_-70px] shadow-slate-900/15 dark:border-slate-800 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-900/80'>
+						<h3 className='flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] sm:tracking-[0.4em] text-emerald-600 dark:text-emerald-400'>
 							<HiAcademicCap className='h-5 w-5' />
 							Education
 						</h3>
-						<ul className='space-y-3'>
+						<ul className='space-y-2 sm:space-y-3'>
 							{EDUCATION.map((item) => {
 								const Icon = item.icon;
 								return (
-									<li key={item.school} className='flex gap-3 rounded-lg border border-slate-100/50 bg-white/50 p-3 dark:border-slate-800/50 dark:bg-slate-950/30'>
-										<Icon className='mt-1 h-5 w-5 shrink-0 text-emerald-600 dark:text-emerald-400' />
-										<div>
-											<p className='font-medium text-slate-900 dark:text-slate-100'>{item.school}</p>
-											<p className='text-sm text-slate-600 dark:text-slate-400'>{item.detail}</p>
+									<li key={item.school} className='flex gap-2 sm:gap-3 rounded-lg border border-slate-100/50 bg-white/50 p-2.5 sm:p-3 dark:border-slate-800/50 dark:bg-slate-950/30'>
+										<Icon className='mt-1 h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-emerald-600 dark:text-emerald-400' />
+									<div>
+										<p className='text-sm sm:text-base font-medium text-slate-900 dark:text-slate-100'>{item.school}</p>
+										<p className='text-xs sm:text-sm text-slate-600 dark:text-slate-400'>{item.detail}</p>
 										</div>
 									</li>
 								);
 							})}
 						</ul>
 					</div>
-					<div className='space-y-4 rounded-2xl border border-slate-100/70 bg-linear-to-br from-white/95 via-emerald-50/40 to-white/90 p-6 shadow-[0_25px_80px_-70px] shadow-emerald-500/15 dark:border-slate-800 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-900/80'>
-						<h3 className='flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.4em] text-sky-600 dark:text-sky-400'>
+					<div className='space-y-3 sm:space-y-4 rounded-2xl border border-slate-100/70 bg-linear-to-br from-white/95 via-emerald-50/40 to-white/90 p-4 sm:p-6 shadow-[0_25px_80px_-70px] shadow-emerald-500/15 dark:border-slate-800 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-900/80'>
+						<h3 className='flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] sm:tracking-[0.4em] text-sky-600 dark:text-sky-400'>
 							<SiReact className='h-5 w-5' />
 							Interests
 						</h3>
-						<ul className='flex flex-wrap gap-2 text-sm'>
+						<ul className='flex flex-wrap gap-1.5 sm:gap-2 text-xs sm:text-sm'>
 							{INTERESTS_DATA.map((interest, index) => {
 								const Icon = interest.icon;
 								return (
 									<li
 										key={interest.name}
-										className={`flex items-center gap-2 rounded-full border px-4 py-2 font-semibold transition hover:scale-105 ${
+										className={`flex items-center gap-1.5 sm:gap-2 rounded-full border px-3 py-1.5 sm:px-4 sm:py-2 font-semibold transition hover:scale-105 ${
 											INTEREST_CHIP_TONES[index % INTEREST_CHIP_TONES.length]
 										}`}
 									>
-										<Icon className='h-4 w-4' />
+										<Icon className='h-3 w-3 sm:h-4 sm:w-4' />
 										{interest.name}
 									</li>
 								);
@@ -98,10 +98,10 @@ export default function About() {
 						</ul>
 						<a
 							href={`${import.meta.env.BASE_URL}Abesh_Ahsan__CV.pdf`}
-							className='inline-flex items-center gap-2 rounded-full border border-emerald-200/70 bg-linear-to-r from-emerald-50 to-sky-50 px-5 py-2.5 text-sm font-semibold text-emerald-700 shadow-sm transition hover:scale-105 hover:border-emerald-300 hover:shadow-md dark:border-emerald-500/30 dark:from-emerald-500/10 dark:to-sky-500/10 dark:text-emerald-300 dark:hover:border-emerald-400/50'
+							className='inline-flex items-center gap-1.5 sm:gap-2 rounded-full border border-emerald-200/70 bg-linear-to-r from-emerald-50 to-sky-50 px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-emerald-700 shadow-sm transition hover:scale-105 hover:border-emerald-300 hover:shadow-md dark:border-emerald-500/30 dark:from-emerald-500/10 dark:to-sky-500/10 dark:text-emerald-300 dark:hover:border-emerald-400/50'
 							download
-						>
-							<HiDownload className='h-4 w-4' />
+							>
+							<HiDownload className='h-3 w-3 sm:h-4 sm:w-4' />
 							Download CV
 						</a>
 					</div>
