@@ -58,7 +58,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
 						href={project.demo}
 						target='_blank'
 						rel='noopener noreferrer'
-						className='inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-sky-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:shadow-xl hover:brightness-105 dark:shadow-emerald-500/20'
+						className='inline-flex items-center gap-2 rounded-full bg-linear-to-r from-emerald-500 to-sky-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:shadow-xl hover:brightness-105 dark:shadow-emerald-500/20'
 					>
 						<FiExternalLink className='h-4 w-4' />
 						View Demo
