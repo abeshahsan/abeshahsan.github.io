@@ -5,7 +5,7 @@ import { HiAcademicCap, HiBriefcase, HiLightBulb, HiCode, HiDownload } from "rea
 const CTA_LINKS = [
 	{ label: "View My Projects", href: "#projects", primary: true, icon: FiExternalLink },
 	{ label: "Contact Me", href: "#contact", primary: false, icon: FiMail },
-	{ label: "Download CV", href: "/Abesh_Ahsan__CV.pdf", primary: false, icon: HiDownload, download: true },
+	{ label: "Download CV", href: `${import.meta.env.BASE_URL}Abesh_Ahsan__CV.pdf`, primary: false, icon: HiDownload, download: true },
 ];
 
 const HIGHLIGHTS = [
@@ -97,11 +97,11 @@ export default function Hero() {
 						className='absolute -inset-2 rounded-4xl bg-linear-to-br from-emerald-200 via-sky-200 to-transparent blur-2xl opacity-70 dark:from-emerald-500/40 dark:via-sky-500/20'
 						aria-hidden='true'
 					/>
-					<div className='relative overflow-hidden rounded-4xl border border-white/70 bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-900'>
-						<img
-							src='/photo-bugs.png'
-							alt='Abesh portrait'
-							className='h-full w-full object-cover'
+				<div className='relative overflow-hidden rounded-4xl border border-white/70 bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-900'>
+					<img
+						src={`${import.meta.env.BASE_URL}photo-bugs.png`}
+						alt='Abesh portrait'
+						className='h-full w-full object-cover'
 							loading='lazy'
 							decoding='async'
 						/>

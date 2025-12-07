@@ -17,7 +17,7 @@ export default function Header() {
 					className='flex items-center gap-3'
 				>
 					<img
-						src='/abesh-logo.svg'
+						src={`${import.meta.env.BASE_URL}abesh-logo.svg`}
 						alt='Abesh signature logo'
 						className='h-10 w-10'
 						loading='lazy'
