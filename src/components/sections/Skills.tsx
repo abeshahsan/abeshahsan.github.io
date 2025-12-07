@@ -6,9 +6,9 @@ import LoadingState from "../common/LoadingState";
 import type { Skill } from "../../types/data";
 
 const SOURCES = [
-	{ id: "languages", label: "Languages", path: "/skills/languages.json" },
-	{ id: "frameworks", label: "Frameworks", path: "/skills/frameworks.json" },
-	{ id: "tools", label: "Tools", path: "/skills/tools.json" },
+	{ id: "languages", label: "Languages", path: `${import.meta.env.BASE_URL}skills/languages.json` },
+	{ id: "frameworks", label: "Frameworks", path: `${import.meta.env.BASE_URL}skills/frameworks.json` },
+	{ id: "tools", label: "Tools", path: `${import.meta.env.BASE_URL}skills/tools.json` },
 ];
 
 export default function Skills() {
