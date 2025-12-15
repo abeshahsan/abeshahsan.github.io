@@ -20,7 +20,7 @@ export default function Thesis() {
 				viewport={VIEWPORT.default}
 			>
 				<SectionHeader
-					label='Thesis'
+					label='Undergrad Thesis'
 					title='Research in computer vision'
 					copy='Exploring weakly supervised methods for semantic segmentation.'
 				/>

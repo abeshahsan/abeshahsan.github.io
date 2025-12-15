@@ -20,7 +20,7 @@ export default function SectionHeader({ label, title, copy }: SectionHeaderProps
 				{label}
 			</motion.span>
 			<motion.h2
-				className='bg-linear-to-r from-slate-900 via-emerald-700 to-slate-900 bg-clip-text text-xl sm:text-2xl md:text-3xl font-semibold text-transparent dark:from-white dark:via-emerald-300 dark:to-white'
+				className='bg-linear-to-r from-slate-900 via-emerald-700 to-slate-900 bg-clip-text text-lg sm:text-xl md:text-2xl font-semibold italic text-transparent dark:from-white dark:via-emerald-300 dark:to-white'
 				variants={headerTextVariants}
 				initial='hidden'
 				whileInView='visible'

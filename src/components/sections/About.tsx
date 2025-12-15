@@ -48,22 +48,21 @@ export default function About() {
 			>
 				<SectionHeader
 					label='About'
-					title='Continuous learner, passionate builder'
+					title='Continuous learner, passionate builder.'
 					copy='Recent graduate combining practical software engineering with machine learning research experience.'
 				/>
 				<motion.div
-					className='space-y-3 sm:space-y-4 text-sm sm:text-base leading-relaxed text-slate-600/95 dark:text-slate-300/90 text-left'
+					className='space-y-4 sm:space-y-5 text-sm sm:text-base leading-loose text-slate-600/95 dark:text-slate-300/90 text-left hyphens-auto'
 					variants={containerVariants}
 				>
 					<motion.p variants={itemVariants}>
-						My name is <strong className='text-slate-900 dark:text-white'>K. M. Abesh Ahsan</strong>, and I am a
+						My name is <strong className='text-slate-900 dark:text-white'>K.M. Abesh Ahsan</strong>, and I am a
 						graduate in <strong>Computer Science and Engineering</strong> from{" "}
-						<strong className='text-emerald-700 dark:text-emerald-300'>IUT</strong>, where I earned a CGPA
-						of <strong className='text-emerald-600 dark:text-emerald-400'>3.72</strong>. I have{" "}
-						<em>hands-on experience</em> with various real-world projects in <strong>desktop</strong>,{" "}
+						<strong className='text-emerald-700 dark:text-emerald-300'>IUT</strong>. I have{" "}
+						<strong className='font-semibold text-slate-900 dark:text-white'>hands-on experience</strong> with various real-world projects in <strong>desktop</strong>,{" "}
 						<strong>mobile</strong>, <strong>web development</strong>, and <strong>machine learning</strong>
 						. My passion lies in software development, as I believe that{" "}
-						<em className='text-emerald-700 dark:text-emerald-300'>
+						<em className='font-semibold text-emerald-700 dark:text-emerald-300'>
 							practical creation is the most effective way to learn
 						</em>
 						. I enthusiastically embrace new technologies as I encounter them.
