@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
 import { FiExternalLink, FiMail } from "react-icons/fi";
-import { HiAcademicCap, HiBriefcase, HiLightBulb, HiCode, HiDownload } from "react-icons/hi";
+import { HiAcademicCap, HiBriefcase, HiLightBulb, HiCode } from "react-icons/hi";
 
 const CTA_LINKS = [
-	{ label: "View My Projects", href: "#projects", primary: true, icon: FiExternalLink },
+	{ label: "View My Projects", href: "#projects", primary: true, icon: HiCode },
 	{ label: "Contact Me", href: "#contact", primary: false, icon: FiMail },
 	{
-		label: "Download CV",
-		href: `${import.meta.env.BASE_URL}Abesh_Ahsan__CV.pdf`,
+		label: "View CV",
+		href: `${window.location.origin}${import.meta.env.BASE_URL}Abesh_Ahsan_CV.pdf`,
 		primary: false,
-		icon: HiDownload,
-		download: true,
+		icon: FiExternalLink,
+		external: true,
+		download: false,
 	},
 ];
 
@@ -105,7 +106,7 @@ export default function Hero() {
 									type='image/webp'
 								/>
 								<img
-									src={`${import.meta.env.BASE_URL}photo-bugs.png`}
+									src={`${import.meta.env.BASE_URL}photo-bugs.webp`}
 									alt='Abesh portrait'
 									className='h-full w-full object-cover'
 									loading='eager'
@@ -156,6 +157,7 @@ export default function Hero() {
 									key={cta.href}
 									href={cta.href}
 									{...(cta.download && { download: true })}
+									{...(cta.external && { target: "_blank", rel: "noopener noreferrer" })}
 									className={
 										cta.primary
 											? "cta-primary inline-flex w-full items-center justify-center gap-2 rounded-full bg-linear-to-r from-emerald-500 via-emerald-400 to-sky-400 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 dark:shadow-emerald-500/20 sm:w-auto"
@@ -194,7 +196,7 @@ export default function Hero() {
 								type='image/webp'
 							/>
 							<img
-								src={`${import.meta.env.BASE_URL}photo-bugs.png`}
+								src={`${import.meta.env.BASE_URL}photo-bugs.webp`}
 								alt='Abesh portrait'
 								className='h-full w-full object-cover'
 								loading='lazy'
