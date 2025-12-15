@@ -6,7 +6,7 @@ export default {
 	darkMode: 'class',
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["-apple-system", "BlinkMacSystemFont", "system-ui", "sans-serif"],
       },
       boxShadow: {
         soft: "0 40px 120px -80px rgba(15,23,42,0.4)",

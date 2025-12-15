@@ -11,6 +11,15 @@ export default defineConfig({
 	build: {
 		minify: "esbuild",
 		outDir: 'dist',
+		rollupOptions: {
+			output: {
+				manualChunks: {
+					'react-vendor': ['react', 'react-dom'],
+					'motion': ['framer-motion'],
+				},
+			},
+		},
+		chunkSizeWarningLimit: 600,
 	},
 	resolve: {
 		alias: {

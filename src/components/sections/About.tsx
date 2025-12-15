@@ -56,7 +56,7 @@ export default function About() {
 					variants={containerVariants}
 				>
 					<motion.p variants={itemVariants}>
-						My name is <strong className='text-slate-900 dark:text-white'>Abesh Ahsan</strong>, and I am a
+						My name is <strong className='text-slate-900 dark:text-white'>K. M. Abesh Ahsan</strong>, and I am a
 						graduate in <strong>Computer Science and Engineering</strong> from{" "}
 						<strong className='text-emerald-700 dark:text-emerald-300'>IUT</strong>, where I earned a CGPA
 						of <strong className='text-emerald-600 dark:text-emerald-400'>3.72</strong>. I have{" "}
