@@ -1,0 +1,85 @@
+[
+	{
+		"id": "vs-leet",
+		"title": "VS-Leet: LeetCode in VS Code",
+		"category": "Desktop",
+		"description": "Streamline DSA practice by ditching browser tabs: This VS Code extension lets you browse, filter, code, test, and submit LeetCode problems—all in your IDE. No more context-switching; just crush interviews with real-time feedback.\n\nKey features:\n- Browse & Filter: Sidebar for problems by difficulty (Easy/Medium/Hard) and tags.\n- Code & Test: Editor support for C++, Java, Python, JS, TS+; instant test runs with verdicts.\n- Submit Seamlessly: Direct LeetCode submission and status tracking; auto-save solutions.\n- Easy Setup: One-time login via automated Chromium; persistent sessions.\n\nBuilt with React, Javascript, and Playwright for smooth webview integration. Handles any LeetCode language, though premium features are out of scope.\n\nImpact: Speeds up grinding 2x by keeping everything in-editor—perfect for bootcamps or daily LeetCode streaks.\n\nLearnings:\n- Extension APIs and webviews for embedded UIs.\n- Automating auth with Playwright.\n- Balancing real-time ML/DSA tools with server dependencies.",
+		"stack": ["Javascript", "React", "Node.js", "Playwright", "TailwindCSS", "VS Code Extension"],
+		"github": "https://github.com/abeshahsan/VS-Leet",
+		"demo": null,
+		"image": null
+	},
+	{
+		"id": "semantic-segmentation-from-scratch",
+		"title": "Semantic Segmentation from Scratch",
+		"category": "ML",
+		"description": "Diving deep into encoder-decoder architectures, I built and trained U-Net and DeepLabV3+ semantic segmentation models from scratch in PyTorch—all on my personal PC. Targeted Carvana (binary car masking) and Cityscapes (multi-class urban scenes) datasets to tackle image editing and autonomous driving challenges.\n\nCore builds:\n- Architectures: U-Net with skip connections for edge precision; DeepLabV3+ with ASPP on ResNet-50 for multi-scale context.\n- Pipeline: Custom loaders, augmentations, and GPU-efficient training scripts.\n- Tools: Mask overlays, metric plots (pixel accuracy, mIoU), and Jupyter notebooks for prototyping.\n\nModels hit strong baselines: U-Net nailed Carvana boundaries; DeepLabV3+ boosted Cityscapes context. Great for educational ML on consumer hardware.\n\nLearnings:\n- End-to-end PyTorch pipelines and dataset handling.\n- Visualization for debugging segmentation.\n- Reproducible experiments under constraints.",
+		"stack": ["PyTorch", "NumPy", "Matplotlib", "Jupyter", "U-Net", "DeepLabV3+"],
+		"github": "https://github.com/abeshahsan/semantic-segmentation-from-scratch",
+		"demo": null,
+		"image": null
+	},
+	{
+		"id": "end-to-end-semantic-segmentation",
+		"title": "End-to-End Semantic Segmentation (WIP)",
+		"category": "ML",
+		"description": "Crafting a user-friendly web app for instant semantic segmentation: Upload an image, pick a model tier (Fastest: SegFormer; Moderate: DeepLabV3; Most Accurate: Mask2Former), and get masks back—powered by Hugging Face Transformers in a PyTorch backend.\n\nCurrent setup:\n- Frontend: React/TypeScript UI for uploads and tier selection.\n- Backend: API endpoints for inference, with batching and GPU support.\n- Extras: Training notebooks for custom fine-tuning.\n\nLocal run: npm start + python app.py. Sub-5s inference on moderate; deploying to Vercel next for AR/design prototypes.\n\nLearnings:\n- Full-stack ML deployment (React + PyTorch).\n- Model trade-offs: speed vs. precision.\n- Iterative prototyping to production.",
+		"stack": ["React", "TypeScript", "PyTorch", "Transformers", "Flask", "SegFormer", "Mask2Former", "DeepLabV3"],
+		"github": "https://github.com/abeshahsan/end-to-end-semantic-segmentation",
+		"demo": null,
+		"image": null
+	},
+
+	{
+		"id": "voice-reminder",
+		"title": "Voice Reminder",
+		"category": "Mobile",
+		"description": "**AI-powered** task management mobile application featuring an innovative split-screen design.\n\nKey Features:\n- Conversational chatbot for intuitive voice command processing\n- **Natural Language Understanding** (NLU) for task extraction\n- **BLoC pattern** for seamless real-time synchronization\n- Robust data persistence with SQLite",
+		"stack": ["Flutter", "SQLite", "BLoC", "Speech Recognition", "NLU"],
+		"github": "https://github.com/abeshahsan/voice_reminder",
+		"demo": null,
+		"image": null
+	},
+	{
+		"id": "chessduel",
+		"title": "ChessDuel",
+		"category": "Web",
+		"description": "**Enterprise-grade** real-time multiplayer chess platform built with **Next.js** and **TypeScript**.\n\nFeatures:\n- Clean **MVC architecture** with Mongoose models\n- Dedicated service layer and RESTful API controllers\n- Secure **NextAuth OAuth** with email validation and JWT-based session management\n- Engineered for scalability and production-ready performance",
+		"stack": ["Next.js", "MongoDB", "NextAuth", "JWT", "Socket.io", "Redux Toolkit", "Material-UI"],
+		"github": "https://github.com/abeshahsan/ChessDuel",
+		"demo": null,
+		"image": null
+	},
+	{
+		"id": "tilawah",
+		"title": "Tilawah",
+		"category": "Web",
+		"description": "Feature-rich **single-page application** for streaming Quran recitations from renowned Qaris worldwide.\n\nHighlights:\n- Seamless audio playback with resume capability\n- Intelligent search (by Surah or Qari)\n- Favorites system and playlist management\n- Built using **vanilla JavaScript** patterns with EJS and jQuery",
+		"stack": ["jQuery", "JavaScript", "Axios", "EJS", "Node.js", "Express.js", "MySQL"],
+		"github": "https://github.com/abeshahsan/Tilawah",
+		"demo": null,
+		"image": null
+	},
+
+	{
+		"id": "photo-wizard",
+		"title": "Photo Wizard",
+		"category": "Desktop",
+		"description": "Fully-featured desktop image editor built entirely from scratch using **pure NumPy**—no OpenCV or PIL dependencies.\n\nCapabilities:\n- Comprehensive toolkit: crop, resize, blur, sharpen, exposure\n- Advanced controls: brightness, contrast, saturation, warmth\n- Geometric transforms and custom filter creation\n- Demonstrates deep understanding of **image processing algorithms**",
+		"stack": ["NumPy", "PyQt6"],
+		"github": "https://github.com/abeshahsan/Photo-Wizard",
+		"demo": null,
+		"image": null
+	},
+
+	{
+		"id": "sign-tutor-ai",
+		"title": "Sign Tutor AI: Gamified Sign Language Learner",
+		"category": "ML",
+		"description": "An AI-powered desktop tutor that makes learning sign language fun and interactive—using YOLOv5 for real-time hand sign detection via webcam, with gamified challenges, scoring, and progress tracking in a sleek PyQt6 interface.\n\nCore features:\n- Real-Time Detection: Captures and analyzes signs on-the-fly, providing instant feedback.\n- Interactive Games: Random sign challenges; practice until 15 correct detections, with hints for tricky ones.\n- Modular Design: Clean architecture with separate threads for video processing, model inference, and UI—ensuring smooth performance.\n- Extensible UI: Custom widgets for branding, progress bars, controls, and video feed overlays.\n\nBuilt for accessibility, it runs locally with minimal setup. Early tests show responsive inference on standard hardware, ideal for self-paced learning.\n\nLearnings:\n- Integrating CV models (YOLOv5/Torch) into desktop apps (PyQt6).\n- Threading for real-time UI without lag.\n- SOLID principles for maintainable ML prototypes.",
+		"stack": ["PyQt6", "PyTorch", "YOLOv5", "OpenCV", "NumPy"],
+		"github": "https://github.com/abeshahsan/Sign-Tutor-AI",
+		"demo": null,
+		"image": null
+	}
+]

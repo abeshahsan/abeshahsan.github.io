@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FiGithub } from "react-icons/fi";
 import SectionHeader from "../common/SectionHeader";
 import { sectionVariants, containerVariants, VIEWPORT } from "../../utils/animations";
 
@@ -127,6 +128,17 @@ export default function Thesis() {
 										<span>Building reproducible research codebases</span>
 									</li>
 								</ul>
+							</div>
+							<div className='mt-6 flex justify-start'>
+								<a
+									href='https://github.com/abeshahsan/CleanWeclip--maybe'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='cta-secondary inline-flex items-center gap-2 rounded-full border border-purple-200/70 bg-white/80 px-5 py-2.5 text-sm font-semibold text-purple-700 hover:border-purple-300 hover:bg-purple-50 hover:shadow-md dark:border-purple-700/70 dark:bg-slate-900/80 dark:text-purple-200 dark:hover:border-purple-600 dark:hover:bg-slate-900'
+								>
+									<FiGithub className='h-4 w-4' />
+									View on GitHub
+								</a>
 							</div>
 						</div>
 					</div>

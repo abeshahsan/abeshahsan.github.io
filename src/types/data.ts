@@ -5,6 +5,7 @@ export interface Skill {
 	level: string;
 	years?: number;
 	favorite?: boolean;
+	category?: string;
 }
 
 export interface Project {

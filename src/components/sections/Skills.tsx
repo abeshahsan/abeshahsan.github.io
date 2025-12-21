@@ -1,49 +1,26 @@
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "../common/SectionHeader";
 import SkillTag from "../common/SkillTag";
-import LoadingState from "../common/LoadingState";
+import skillsData from "../../data/skills.json";
 import type { Skill } from "../../types/data";
 import { sectionVariants, containerVariants, VIEWPORT } from "../../utils/animations";
 
-const SOURCES = [
-	{ id: "languages", label: "Languages", path: `${import.meta.env.BASE_URL}skills/languages.json` },
-	{ id: "frameworks", label: "Frameworks", path: `${import.meta.env.BASE_URL}skills/frameworks.json` },
-	{ id: "tools", label: "Tools", path: `${import.meta.env.BASE_URL}skills/tools.json` },
+const CATEGORIES = [
+	{ id: "languages", label: "Languages" },
+	{ id: "frameworks", label: "Frameworks" },
+	{ id: "tools", label: "Tools" },
 ];
 
 export default function Skills() {
-	const [data, setData] = useState<Record<string, Skill[]>>({});
-	const [status, setStatus] = useState<"idle" | "loading" | "ready" | "error">("idle");
-	const [error, setError] = useState<string>("");
-
-	useEffect(() => {
-		let canceled = false;
-		async function loadSkills() {
-			try {
-				setStatus("loading");
-				const responses = await Promise.all(
-					SOURCES.map(async (source) => {
-						const res = await fetch(source.path);
-						if (!res.ok) throw new Error(`Unable to load ${source.label}`);
-						const payload: Skill[] = await res.json();
-						return [source.id, payload] as const;
-					})
-				);
-				if (canceled) return;
-				setData(Object.fromEntries(responses));
-				setStatus("ready");
-			} catch (err) {
-				if (canceled) return;
-				setStatus("error");
-				setError(err instanceof Error ? err.message : "Unknown error");
-			}
-		}
-
-		loadSkills();
-		return () => {
-			canceled = true;
-		};
+	const skillsByCategory = useMemo(() => {
+		const grouped: Record<string, Skill[]> = {};
+		(skillsData as Skill[]).forEach((skill) => {
+			const cat = skill.category || "other";
+			if (!grouped[cat]) grouped[cat] = [];
+			grouped[cat].push(skill);
+		});
+		return grouped;
 	}, []);
 
 	return (
@@ -67,27 +44,22 @@ export default function Skills() {
 					title='Technical Stack'
 					copy='Languages, frameworks, and tools I use to build modern applications.'
 				/>
-				{status === "loading" ? <LoadingState label='Loading skills' /> : null}
-				{status === "error" ? (
-					<p className='rounded-2xl border border-red-200 bg-red-50/60 px-4 py-3 text-sm text-red-600 dark:border-red-500/40 dark:bg-red-500/5 dark:text-red-200'>
-						{error}
-					</p>
-				) : null}
+				
 				<div
 					className='grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3'
 					role='list'
 					aria-label='Technical skills by category'
 				>
-					{SOURCES.map((source) => (
+					{CATEGORIES.map((category) => (
 						<div
-							key={source.id}
+							key={category.id}
 							className='relative space-y-3 sm:space-y-4 rounded-2xl border border-slate-100/80 bg-linear-to-br from-white/90 via-emerald-50/30 to-white/90 p-4 sm:p-6 shadow-[0_30px_80px_-60px] shadow-emerald-500/15 dark:border-slate-800 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-900/80'
 						>
 							<h3 className='text-xs sm:text-sm font-semibold uppercase tracking-[0.4em] text-emerald-500 dark:text-emerald-300'>
-								{source.label}
+								{category.label}
 							</h3>
 							<ul className='flex flex-wrap gap-2 sm:gap-3'>
-								{data[source.id]?.map((skill) => (
+								{skillsByCategory[category.id]?.map((skill) => (
 									<SkillTag
 										key={skill.name}
 										skill={skill}

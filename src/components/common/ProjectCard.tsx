@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import type { Project } from "../../types/data";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { cardVariants, VIEWPORT } from "../../utils/animations";
@@ -11,7 +13,9 @@ const chipPalette = [
 
 const categoryAccent: Record<string, string> = {
 	Web: "text-sky-500",
-	"Machine Learning": "text-violet-400",
+	ML: "text-violet-400",
+	Mobile: "text-amber-500",
+	Desktop: "text-emerald-500",
 };
 
 interface ProjectCardProps {
@@ -43,9 +47,11 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
 					{project.category ?? ""}
 				</span>
 			</div>
-			<p className='mt-2 sm:mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 text-left'>
-				{displayDescription}
-			</p>
+			<div className='mt-2 sm:mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 text-left prose prose-slate dark:prose-invert max-w-none prose-sm'>
+				<ReactMarkdown remarkPlugins={[remarkGfm]}>
+					{displayDescription}
+				</ReactMarkdown>
+			</div>
 			<ul className='mt-3 sm:mt-4 flex flex-wrap gap-1.5 sm:gap-2'>
 				{project.stack.map((item, index) => (
 					<li
