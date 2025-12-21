@@ -62,6 +62,17 @@
 	},
 
 	{
+		"id": "ibadah",
+		"title": "Ibadah: Muslim Prayer & Ibadah Tracker",
+		"category": "Web",
+		"description": "A web app for practicing Muslims to track daily ibadah (worship acts) like prayers and reflections—built as a team lab project in Node.js/Express. Integrates Aladhan API for accurate prayer times, with user dashboards for logging and progress visualization.\n\nKey features:\n- Activity Tracking: Log prayers, Quran readings, and deeds with timestamps and notes.\n- Prayer Alerts: Real-time notifications via API-synced schedules.\n- Modular Backend: Routes for auth/users, EJS views for dynamic rendering, MySQL for persistent data.\n- Frontend Polish: jQuery-driven interactions and responsive CSS for mobile-friendly use.\n\nCollaborative build emphasizing clean code and OOD principles; runs locally or deployable to Heroku.\n\nLearnings:\n- Full-stack development with Express and databases.\n- API integrations for real-world data.\n- Team workflows in agile software labs.",
+		"stack": ["Node.js", "Express.js", "MySQL", "EJS", "jQuery", "axios", "JavaScript", "CSS"],
+		"github": "https://github.com/Ani445/Ibadah",
+		"demo": null,
+		"image": "/images/ibadah-dashboard.png"
+	},
+
+	{
 		"id": "photo-wizard",
 		"title": "Photo Wizard",
 		"category": "Desktop",
