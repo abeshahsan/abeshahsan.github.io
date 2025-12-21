@@ -13,10 +13,10 @@ import Contact from "../sections/Contact";
 
 const TABS = [
 	{ id: "about", label: "About", icon: HiUser },
-	{ id: "skills", label: "Skills", icon: HiLightningBolt },
-	{ id: "projects", label: "Projects", icon: HiBriefcase },
 	{ id: "experience", label: "Experience", icon: HiBriefcase },
 	{ id: "research", label: "Research", icon: HiAcademicCap },
+	{ id: "skills", label: "Skills", icon: HiLightningBolt },
+	{ id: "projects", label: "Projects", icon: HiBriefcase },
 	{ id: "contact", label: "Contact", icon: HiChat },
 ];
 
