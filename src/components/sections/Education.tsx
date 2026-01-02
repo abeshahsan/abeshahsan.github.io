@@ -36,7 +36,7 @@ export default function Education() {
   return (
     <motion.section
       id="education"
-      className="rounded-3xl border border-slate-100/70 bg-linear-to-br from-white via-amber-50/40 to-white p-6 sm:p-8 md:p-10 shadow-[0_40px_120px_-80px] shadow-amber-500/20 dark:border-slate-800/70 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900"
+      className="rounded-3xl border border-slate-100/70 bg-linear-to-br from-white via-slate-50 to-white p-6 sm:p-8 md:p-10 shadow-[0_40px_120px_-80px] shadow-slate-900/10 dark:border-slate-800/70 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
@@ -52,7 +52,7 @@ export default function Education() {
         <SectionHeader
           label="Education"
           title="Academic background"
-          copy="A concise overview of my formal education."
+          copy=""
         />
 
         <div className="divide-y divide-slate-200/60 dark:divide-slate-800">
@@ -62,7 +62,7 @@ export default function Education() {
               variants={itemVariants}
               className="flex gap-4 py-4"
             >
-              <HiAcademicCap className="mt-1 h-5 w-5 shrink-0 text-amber-600 dark:text-amber-400" />
+              <HiAcademicCap className="mt-1 h-5 w-5 shrink-0 text-primary dark:text-primary/90" />
 
               <div className="flex-1">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -81,7 +81,7 @@ export default function Education() {
                   {edu.institution}, {edu.location}
                 </p>
 
-                <p className="mt-1 text-sm font-medium text-amber-600 dark:text-amber-400">
+                <p className="mt-1 text-sm font-medium text-primary dark:text-primary/90">
                   {edu.result}
                 </p>
               </div>
