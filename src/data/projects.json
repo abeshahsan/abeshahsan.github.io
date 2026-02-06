@@ -1,5 +1,25 @@
 [
 	{
+		"id": "inner-voices",
+		"title": "Inner Voices: Private Digital Journal",
+		"category": "Mobile",
+		"description": "A secure, private digital journal app that provides a safe space for personal thoughts and reflections. It prioritizes privacy through local PIN and biometric app locking. The app features rich text editing, offline-first storage for writing and reading entries without internet, and end-to-end encrypted cloud backups to the user's Google Drive. It includes smart sync monitoring to show local vs. cloud status, along with dynamic theming (light, dark, system) for a smooth, intuitive experience across devices.",
+		"stack": ["Flutter", "BLoC", "Realm DB", "GDrive API", "Biometric", "E2E Encryption", "Local Storage"],
+		"github": "https://github.com/abeshahsan/innervoices",
+		"demo": null,
+		"image": null
+	},
+	{
+		"id": "fungames",
+		"title": "FunGames: Browser-Based Multiplayer Mini-Games",
+		"category": "Web",
+		"description": "Modern browser-based gaming platform featuring an expanding suite of mini-games (Memory Match live; Tic-Tac-Toe, Snake, Chess + more in active development). Offers anonymous no-login entry, real-time multiplayer via WebSockets, session-persistent user IDs and usernames, responsive cross-device design, optimized low-latency performance with serverless Redis storage, and smooth instant-play gameplay for casual, high-engagement sessions.",
+		"stack": ["Next.js", "TypeScript", "Tailwind", "Zustand", "Pusher", "Upstash Redis"],
+		"github": "https://github.com/abeshahsan/mini-games",
+		"demo": null,
+		"image": null
+	},
+	{
 		"id": "vs-leet",
 		"title": "VS-Leet: LeetCode in VS Code",
 		"category": "Desktop",
