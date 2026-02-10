@@ -49,27 +49,6 @@
 		"demo": null,
 		"image": null
 	},
-
-	{
-		"id": "voice-reminder",
-		"title": "Voice Reminder",
-		"category": "Mobile",
-		"description": "**AI-powered** task management mobile application featuring an innovative split-screen design.\n\nKey Features:\n- Conversational chatbot for intuitive voice command processing\n- **Natural Language Understanding** (NLU) for task extraction\n- **BLoC pattern** for seamless real-time synchronization\n- Robust data persistence with SQLite",
-		"stack": ["Flutter", "SQLite", "BLoC", "Speech Recognition", "NLU"],
-		"github": "https://github.com/abeshahsan/voice_reminder",
-		"demo": null,
-		"image": null
-	},
-	{
-		"id": "chessduel",
-		"title": "ChessDuel",
-		"category": "Web",
-		"description": "**Enterprise-grade** real-time multiplayer chess platform built with **Next.js** and **TypeScript**.\n\nFeatures:\n- Clean **MVC architecture** with Mongoose models\n- Dedicated service layer and RESTful API controllers\n- Secure **NextAuth OAuth** with email validation and JWT-based session management\n- Engineered for scalability and production-ready performance",
-		"stack": ["Next.js", "MongoDB", "NextAuth", "JWT", "Socket.io", "Redux Toolkit", "Material-UI"],
-		"github": "https://github.com/abeshahsan/ChessDuel",
-		"demo": null,
-		"image": null
-	},
 	{
 		"id": "tilawah",
 		"title": "Tilawah",
