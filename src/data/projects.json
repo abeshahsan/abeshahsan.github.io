@@ -10,14 +10,14 @@
 		"image": null
 	},
 	{
-		"id": "fungames",
-		"title": "FunGames: Browser-Based Multiplayer Mini-Games",
+		"id": "playclassix",
+		"title": "PlayClassix — Classic Online Games for Everyone",
 		"category": "Web",
 		"description": "Modern browser-based gaming platform featuring an expanding suite of mini-games (Memory Match, Wordle, 8 Ball Billiards, Snake, Chess). Offers anonymous no-login entry, real-time multiplayer via WebSockets, session-persistent user IDs and usernames, responsive cross-device design, optimized low-latency performance with serverless Redis storage, and smooth instant-play gameplay for casual, high-engagement sessions.",
 		"stack": ["Next.js", "TypeScript", "Tailwind", "Zustand", "Pusher", "Upstash Redis"],
-		"github": "https://github.com/abeshahsan/mini-games",
-		"demo": null,
-		"image": null
+		"github": "https://github.com/abeshahsan/playclassix",
+		"demo": "https://playclassix.vercel.app/",
+		"image": "https://playclassix.vercel.app/assets/social/og-image-1200x630.webp"
 	},
 	{
 		"id": "vs-leet",
