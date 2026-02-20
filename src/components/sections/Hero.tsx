@@ -102,11 +102,11 @@ export default function Hero() {
 						<div className='relative overflow-hidden rounded-4xl border border-white/70 bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-900'>
 							<picture>
 								<source
-									srcSet={`${import.meta.env.BASE_URL}photo-bugs.webp`}
+									srcSet={`${import.meta.env.BASE_URL}photo.webp`}
 									type='image/webp'
 								/>
 								<img
-									src={`${import.meta.env.BASE_URL}photo-bugs.webp`}
+									src={`${import.meta.env.BASE_URL}photo.webp`}
 									alt='Abesh portrait'
 									className='h-full w-full object-cover'
 									loading='eager'
@@ -192,11 +192,11 @@ export default function Hero() {
 					<div className='relative overflow-hidden rounded-4xl border border-white/70 bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-900'>
 						<picture>
 							<source
-								srcSet={`${import.meta.env.BASE_URL}photo-bugs.webp`}
+								srcSet={`${import.meta.env.BASE_URL}photo.webp`}
 								type='image/webp'
 							/>
 							<img
-								src={`${import.meta.env.BASE_URL}photo-bugs.webp`}
+								src={`${import.meta.env.BASE_URL}photo.webp`}
 								alt='Abesh portrait'
 								className='h-full w-full object-cover'
 								loading='lazy'

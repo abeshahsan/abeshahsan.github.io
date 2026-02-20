@@ -169,7 +169,7 @@ export default function TabLayout() {
 							<div className='absolute inset-0 rounded-2xl bg-linear-to-br from-emerald-500 to-sky-500 opacity-20 blur-xl'></div>
 							<div className='relative w-32 overflow-hidden rounded-2xl border-4 border-emerald-500/30 bg-linear-to-br from-white to-slate-50 p-2 shadow-2xl transition-transform duration-300 hover:scale-105 dark:border-emerald-500/20 dark:from-slate-900 dark:to-slate-800 sm:w-40 lg:w-48'>
 								<img
-									src={`${import.meta.env.BASE_URL}photo-bugs.webp`}
+									src={`${import.meta.env.BASE_URL}photo.webp`}
 									alt='Abesh Ahsan'
 									className='h-auto w-full rounded-xl object-contain'
 									loading='lazy'
