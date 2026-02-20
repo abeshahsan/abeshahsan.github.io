@@ -49,7 +49,7 @@ const TABS: TabItem[] = [
 const SOCIAL_LINKS = [
 	{ href: "mailto:abeshahsan2002@gmail.com", icon: HiMail, label: "Email" },
 	{ href: "https://github.com/abeshahsan", icon: FiGithub, label: "GitHub" },
-	{ href: "www.linkedin.com/in/abesh-ahsan-413282280", icon: FiLinkedin, label: "LinkedIn" },
+	{ href: "https://www.linkedin.com/in/abesh-ahsan-413282280", icon: FiLinkedin, label: "LinkedIn" },
 	{ href: "https://leetcode.com/abeshahsan", icon: SiLeetcode, label: "LeetCode" },
 ];
 
